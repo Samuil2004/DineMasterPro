@@ -1,0 +1,150 @@
+.centeredContainerForItem {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: rgb(255, 255, 255);
+  margin: 10px;
+  padding: 0;
+  border-radius: 10px;
+}
+@media (max-width: 780px) {
+  .centeredContainerForItem {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .detailsHolder {
+    padding-left: 20px;
+  }
+}
+
+.imageHolder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imageHolder img {
+  width: 60%;
+  height: auto;
+}
+.detailsHolder {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.detailsHolder h1 {
+  color: #58a4b0;
+}
+.greyColor {
+  color: grey;
+}
+.detailsHolder h3 {
+  color: rgb(96, 96, 96);
+}
+.weightIcon {
+  display: flex;
+}
+.weightIcon h3 {
+  color: #58a4b0;
+}
+.weightIcon img {
+  width: 30px;
+  height: auto;
+  padding-right: 10px;
+}
+.vegetarian {
+  display: flex;
+}
+.vegetarian img {
+  width: 30px;
+  height: auto;
+  padding-left: 10px;
+}
+.pizzaSizes {
+  height: 100px;
+  /* background-color: #58a4b0; */
+  width: 90%;
+  display: flex;
+  align-items: center;
+}
+.pizzaSize {
+  height: 90%;
+  /* background-color: #738689; */
+  width: 33%;
+  /* display: flex;
+  align-items: center; */
+  text-align: center;
+}
+.pizzaSize p {
+  color: black;
+  margin-top: 0px;
+}
+.pizzaSize:hover {
+  background-color: rgb(220, 220, 220);
+}
+.pizzaSize.selected {
+  border-bottom: 4px solid #58a4b0;
+}
+
+.detailsFooter {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: center;
+}
+.detailsFooter h3 {
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 25px;
+}
+
+.amountPanel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.amountPanel img {
+  height: 25px;
+  border: 1px solid grey;
+  border-radius: 50%;
+  padding: 7px;
+}
+.amountPanel img:hover {
+  background-color: rgb(196, 196, 196);
+}
+
+.addToBasket {
+  height: 60%;
+  width: 180px;
+  background-color: #609e29;
+
+  border-radius: 5px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addToBasket:hover {
+  background-color: #63b21e;
+}
+
+.addToBasket img {
+  height: 25px;
+  padding: 7px;
+}
+.addToBasket h3 {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 21px;
+}
+
+.addToBasket {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.addToBasketIcon {
+  margin-right: 10px;
+  height: 25px;
+  padding: 7px;
+}

@@ -1,0 +1,44 @@
+.content {
+  /* background-color: white; */
+  min-height: 60vh;
+  padding: 30px 15px; /*padding from the top and the sides of the items within the content box */
+  text-align: center;
+}
+
+.itemsContainer {
+  display: grid;
+  grid-template-columns: repeat(
+    5,
+    230px
+  ); /*in the beggining (before the tab is shrinked it will be 5 item boxes, each 230px wide and with 15px gap between them*/
+
+  justify-content: center; /*makes the item boxes to be placed in the center of the container*/
+  margin-left: 50px;
+  margin-right: 50px;
+  gap: 15px; /* Add space between items */
+}
+
+/* Device friendly strategy for the items container */
+@media (max-width: 1400px) {
+  .itemsContainer {
+    grid-template-columns: repeat(4, 230px); /* 4 columns on medium screens */
+  }
+}
+
+@media (max-width: 1150px) {
+  .itemsContainer {
+    grid-template-columns: repeat(3, 230px); /* 3 columns on smaller screens */
+  }
+}
+
+@media (max-width: 900px) {
+  .itemsContainer {
+    grid-template-columns: repeat(2, 300px); /* 2 columns on small screens */
+  }
+}
+
+@media (max-width: 780px) {
+  .itemsContainer {
+    grid-template-columns: 350px; /* 1 column on extra-small screens */
+  }
+}
