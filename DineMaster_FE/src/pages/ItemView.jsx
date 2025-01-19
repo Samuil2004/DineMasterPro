@@ -267,7 +267,7 @@ function ItemView() {
             </button>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 bg-white m-2 p-0 rounded-lg mx-38">
-            <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center md:mt-0 mt-2">
               {getImageForItemView(
                 selecteditem.itemId,
                 itemImageVersion,
@@ -294,7 +294,7 @@ function ItemView() {
                   size="10"
                 />
               </div>
-              <div className="flex justify-between items-center py-4 px-5">
+              <div className="flex justify-between items-center py-4 sm:px-2">
                 <div className="flex justify-between items-center">
                   <img
                     src="/icons/minus.svg"
@@ -319,7 +319,7 @@ function ItemView() {
                   />
                 </div>
                 <div
-                  className="flex items-center justify-center h-16 w-44 bg-[#609e29] rounded-md cursor-pointer hover:bg-[#63b21e]"
+                  className="flex items-center justify-center h-16 sm:w-44 bg-[#609e29] rounded-md cursor-pointer hover:bg-[#63b21e] sm:mr-0 w-36"
                   onClick={() => {
                     if (!checkLoggedInUser("CUSTOMER")) {
                       navigate("/login");

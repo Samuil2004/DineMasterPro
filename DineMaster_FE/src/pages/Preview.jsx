@@ -128,7 +128,7 @@ function Preview() {
             <p className="text-2xl underline">Order overview</p>
             {itemsInCart.map((item) => (
               <div className="flex flex-col w-full" key={item.selectedItemId}>
-                <div className="h-12 w-full flex items-center relative mb-1 px-3 ">
+                <div className="h-12 w-full flex items-center relative mb-1 sm:px-3 ">
                   <button
                     className="h-1/2 bg-transparent border-none"
                     onClick={() => {
@@ -158,7 +158,8 @@ function Preview() {
                     )}
                   </div>
                   <p className="ml-3 text-xl">
-                    {item.amount} x {cuttedName(item.itemOfReference.itemName)}
+                    {item.amount} x{" "}
+                    {cuttedName(item.itemOfReference.itemName, 10)}
                   </p>
                   <p className="text-l font-bold absolute right-4">
                     €
@@ -204,16 +205,23 @@ function Preview() {
               </div>
             ))}
             <div className="border-t border-t-[1px] border-t-[rgb(101,101,101)] w-full flex flex-col mb-1">
-              <div className="flex justify-between px-14 text-l h-7 items-center">
+              <div className="flex justify-between sm:px-14 px-4 text-l h-7 items-center">
                 <p>Delivery fee:</p>
                 <p>€ {deliveryFee}</p>
               </div>
-              <div className="flex justify-between px-14 text-xl h-7 items-center">
+              <div className="flex justify-between sm:px-14 px-4 text-xl h-7 items-center">
                 <p>Total price:</p>
                 <p>€ {(Number(cart.price) + Number(deliveryFee)).toFixed(2)}</p>
               </div>
+              <div className="sm:px-14 px-4 text-xs h-7 text-left text-gray-500">
+                <p>
+                  *Delivery fee has a starting price of 0.99 and additional fee
+                  based on the distance from the restaurant to the provided
+                  address
+                </p>
+              </div>
             </div>
-            <div className="flex px-10 flex-col">
+            <div className="flex sm:px-10 px-4 flex-col mt-2">
               <p className="text-left text-xl mt-3">Comments:</p>
               <input
                 className="block border border-gray-300 rounded-md px-2 py-1 w-full lg:max-w-[50%] h-16"
@@ -231,13 +239,13 @@ function Preview() {
 
           <form
             onSubmit={handleSubmit(handleSubmitEvent)}
-            className="col-span-2 row-span-2  p-3 content-start bg-custom-gray"
+            className="col-span-2 row-span-2 grid p-3 content-start bg-custom-gray"
           >
             <p className="text-left text-2xl">
               {firstName} {lastName}
             </p>
             <p className="text-left text-l mt-5">{email}</p>
-            <div className="w-1/2">
+            <div className="sm:w-1/2 w-full">
               <PhoneNumberInput
                 register={register}
                 errors={errors}
@@ -245,7 +253,7 @@ function Preview() {
               />
             </div>
             <p className="text-left text-xl mt-3 font-bold">Delivery Adress</p>
-            <div className=" flex mt-3 justify-between">
+            <div className=" sm:flex grid mt-3 justify-between">
               <CountryInput
                 register={register}
                 errors={errors}
@@ -257,7 +265,7 @@ function Preview() {
                 populateData={true}
               />
             </div>
-            <div className="flex mt-3 justify-around">
+            <div className="sm:flex grid sm:mt-3 justify-around">
               <StreetInput
                 register={register}
                 errors={errors}

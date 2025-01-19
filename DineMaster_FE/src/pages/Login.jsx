@@ -32,12 +32,20 @@ function Login() {
           <UsernameInput register={register} errors={errors} />
           <PasswordInput register={register} errors={errors} />
           <div className="flex justify-end text-sm mb-4">
-            <a
+            {/* <a
               href="/forgottenPassword"
               className="text-[rgba(110,110,110,0.9)] hover:underline px-4 pt-2"
             >
               Forgot Password?
-            </a>
+            </a> */}
+            <p>
+              <Link
+                to="/forgottenPassword"
+                className="text-[rgba(110,110,110,0.9)] hover:underline px-4 pt-2"
+              >
+                Forgot Password?
+              </Link>
+            </p>
           </div>
           <button
             type="submit"

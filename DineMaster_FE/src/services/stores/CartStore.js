@@ -94,9 +94,9 @@ const CartStore = create((set, get) => ({
     });
   },
 
-  cuttedName: (name) => {
-    if (name.length > 15) {
-      return name.substring(0, 15) + "...";
+  cuttedName: (name, size = 15) => {
+    if (name.length > size) {
+      return name.substring(0, size) + "...";
     }
     return name;
   },

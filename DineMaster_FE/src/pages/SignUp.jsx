@@ -67,7 +67,7 @@ function SignUp() {
             Sign up
           </button>
           <div className="text-sm text-center mt-6">
-            <p>
+            {/* <p>
               Already have an account?
               <a
                 href="/login"
@@ -75,6 +75,14 @@ function SignUp() {
               >
                 Login
               </a>
+            </p> */}
+            <p>
+              <Link
+                to="/login"
+                className="text-green-600 font-semibold hover:underline"
+              >
+                Login
+              </Link>
             </p>
           </div>
         </form>

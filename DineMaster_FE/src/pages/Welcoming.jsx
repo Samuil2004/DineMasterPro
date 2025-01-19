@@ -9,7 +9,7 @@ function Welcoming() {
   };
 
   return (
-    <div className="grid md:grid-cols-2 grid-cols-1 gap-4 h-screen w-full bg-[url('/images/welcomingBannerReducedSize.webp')] bg-cover bg-center text-white items-center">
+    <div className="grid md:grid-cols-2 grid-cols-1 md:gap-4 h-screen w-full bg-[url('/images/welcomingBannerReducedSize.webp')] bg-cover bg-center text-white items-center">
       <div className="flex flex-col justify-center items-start px-8 md:px-16">
         <div className="text-xl md:text-2xl font-bold bg-white text-black py-2 px-6 rounded-full shadow-xl animate-pulseColor mb-6">
           <p>
@@ -37,11 +37,12 @@ function Welcoming() {
           </button>
         </div>
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center lg:h-auto lg:w-full h-3/4 w-auto -mt-6">
         <img
           src="/images/welcomePagePizza.webp"
           alt="Pizza"
-          className="w-4/5 md:w-full lg:w-4/5 h-auto rounded-lg shadow-lg"
+          // className="w-4/5 md:w-full lg:w-4/5 h-3/4 rounded-lg shadow-lg"
+          className=" sm:h-auto sm:w-auto h-full w-auto max-h-[60%] xl:max-h-full"
         />
       </div>
     </div>

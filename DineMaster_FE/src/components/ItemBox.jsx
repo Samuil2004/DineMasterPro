@@ -6,7 +6,7 @@ function ItemBox(props) {
     <NavLink
       key={props.item.itemId}
       to={props.navigationPath}
-      className="bg-white h-[350px] lg:w-60 md:w-80 w-96 rounded-xl flex flex-col box-border text-black transition-transform transform hover:scale-105 hover:shadow-lg"
+      className="bg-white h-[350px] lg:w-60 md:w-80 w-[370px] rounded-xl flex flex-col box-border text-black transition-transform transform hover:scale-105 hover:shadow-lg"
       state={{ itemId: props.item.itemId, category: props.category }}
     >
       <div className="flex w-full justify-center">

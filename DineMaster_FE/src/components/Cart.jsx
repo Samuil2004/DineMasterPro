@@ -136,7 +136,7 @@ function Cart() {
 
           <div className="border-t-[1px] px-5 border-gray-500 flex flex-col mb-2">
             <div className="flex justify-between text-[15px] h-[30px] items-center">
-              <p>Delivery fee:</p>
+              <p>Starting delivery fee:</p>
               <p>€ 0,99</p>
             </div>
             <div className="flex justify-between text-[18px] h-[30px] items-center">

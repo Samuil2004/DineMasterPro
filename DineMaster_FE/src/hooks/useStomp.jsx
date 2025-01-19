@@ -24,7 +24,9 @@ const useStomp = () => {
         }
 
         const client = new Client({
-          brokerURL: `ws://localhost:8080/ws?token=${token}`,
+          // brokerURL: `ws://localhost:8080/ws?token=${token}`,
+          brokerURL: `ws://https://dinemaster-backend-last.onrender.com/ws?token=${token}`,
+
           reconnectDelay: 5000,
           heartbeatIncoming: 4000,
           heartbeatOutgoing: 4000,

@@ -45,7 +45,7 @@ function Basket() {
       {thereIsActiveOrder ? (
         <>
           <img
-            className="w-auto max-h-14 cursor-pointer"
+            className="w-auto max-h-14 cursor-pointer max-w-none"
             id="basketIcon"
             // src="/icons/basketIcon.svg"
             src="/icons/orderIcon.png"
@@ -59,7 +59,7 @@ function Basket() {
       ) : (
         <>
           <img
-            className="w-auto max-h-14 cursor-pointer"
+            className="w-auto max-h-14 cursor-pointer max-w-none"
             id="basketIcon"
             src="/icons/basketIcon.svg"
             // src="/icons/orderIcon.png"
