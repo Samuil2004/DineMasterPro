@@ -1,6 +1,6 @@
 //Backend DEV
-const baseURL = "http://localhost:8080";
-// const baseURL = "https://dinemaster-backend-last.onrender.com";
+// const baseURL = "http://localhost:8080";
+const baseURL = "https://dinemaster-backend-last.onrender.com";
 
 //Backend STAGING
 //baseURL: "http://localhost:8090",

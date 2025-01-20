@@ -3,7 +3,6 @@ import { handleApiError } from "../../apiErrorHandler";
 import { setTokens } from "../../TokenManager";
 
 function getAllVsibleItemsFromCategory(category) {
-  console.log("DSDS");
   return api
     .get(`/items/categories/${category}?visibleInMenu=true`)
     .catch((error) => {
